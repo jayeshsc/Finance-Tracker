@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>FinVita</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+    <h1>FinVita</h1>
+
+    <form id="expense-form">
+        <input type="text" id="description" placeholder="Expense description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Submit Expense</button>
+    </form>
+    <hr>
+  <!-- Add the search input and button -->
+
+  <h2>Search </h2>
+<div id="search-bar">
+    <input type="text" id="search-input" placeholder="Search by description" />
+    <button id="search-button">Search</button>
+</div>
+<div id="search-results">
+   
+    <ul id="results-list">
+        <!-- Search results will be displayed here -->
+    </ul>
+</div>
+
+    <hr>
+    <h2>Audit Log</h2>
+    <div id="transaction-table">
+        <!-- Table will be generated here -->
+    </div>
+    <div id="total-expenses">
+        <p>Total Expenses: $<span id="total-amount">0.00</span></p>
+
+
+        <h2>Download Data</h2>
+        <div id="export-button-container">
+            <button id="download-csv" class="action-button">Download CSV</button>
+        </div>
+
+        <h2>Visualization</h2>
+    </div>
+    <div id="bar-chart-container">
+        <!-- Bar chart will be generated here -->
+    </div>
+
+
+
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script> <!-- D3.js library -->
+    <script src="/static/main.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+</html>

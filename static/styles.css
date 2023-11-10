@@ -1,0 +1,159 @@
+/* Style the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c8bfff; /* Light purple background */
+  border-radius: 10px; /* Rounded corners */
+margin-left: 5px;
+}
+
+/* Style the header */
+h1 {
+  text-align: center;
+  background-color: #8747ff; /* Dark purple background */
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the form */
+#expense-form {
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+#expense-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+#expense-form button {
+  background-color: #8747ff; /* Dark purple background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the transaction table */
+#transaction-table {
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #c8bfff; /* Light purple border */
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px; /* Rounded corners */
+}
+
+#transaction-table th,
+#transaction-table td {
+  border: 1px solid #c8bfff; /* Light purple border */
+  padding: 8px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+#transaction-table th {
+  background-color: #8747ff; /* Dark purple background */
+  color: #fff;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the line graph container */
+#bar-chart-container {
+  margin: 40px 20px 20px 20px; /* Increase top margin */
+  background-color: #fff;
+  border: 1px solid #c8bfff; /* Light purple border */
+  width: 100%;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the line graph SVG */
+#bar-chart-container svg {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the x and y axis labels */
+.text-label {
+  font-size: 14px;
+  fill: #8747ff; /* Dark purple text */
+  border-radius: 10px; /* Rounded corners */
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid #8747ff;
+  border-radius: 5px;
+  color: #8747ff;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.action-button:hover {
+  background-color: #8747ff;
+  color: #fff;
+}
+
+/* Style the search results list */
+#results-list {
+  list-style: none; /* Remove default list-style */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style individual list items */
+#results-list li {
+  margin: 5px 0; /* Add some spacing between list items */
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style list item text */
+#results-list li p {
+  margin: 0; /* Remove margin for <p> elements inside list items */
+  font-size: 16px;
+  color: #333;
+}
+
+/* Hover effect for list items */
+#results-list li:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+/* Add a border to separate list items */
+#results-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Center text within list items */
+#results-list li {
+  text-align: center;
+}
+
+/* Style the "No results found" message */
+#results-list p.no-results {
+  font-style: italic;
+  color: #999;
+  text-align: center;
+}
